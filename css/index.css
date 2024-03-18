@@ -1,0 +1,573 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    --primary-color:#033b4a;
+    --secondary-color:#20c997;
+    --gray-color:#4a4a4d;
+
+}
+html{
+   scroll-behavior: smooth;
+}
+
+/* U Start */
+.continer{
+    max-width: 1100px;
+    margin: auto;
+    padding:  2rem;
+    background-color: red;
+}
+
+.text-primary{
+   color: var(--secondary-color);
+}
+/* U End */
+
+
+
+/* header start */
+header{
+    background-color: #eadddd;
+    height: 100vh;
+ }
+ header .navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #161695;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 12vh;
+ }
+ 
+
+ header .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: .5rem ;
+    
+   
+ }
+
+ header .navbar nav .logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: #1488a8;
+ }
+
+ header .navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+ }
+ header .navbar nav ul li{
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+ }
+ 
+ header .navbar nav ul li:hover{
+    background-color: rgb(174, 213, 224);
+    border-bottom: 2px solid var(--primary-color);
+    
+    border-radius: 4px;
+ }
+
+ header .contaner{
+    
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    
+ }
+ header  .contaner .text-contant h1 {
+
+    color: var(--primary-color);
+    font-size: 70px;
+    font-weight: 600;
+    margin: 25px 0;
+
+ }
+ header main .contaner .text-contant p span{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 40px;
+   
+ }
+ header  .contaner .text-contant .title{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 25px 0  30px;
+ }
+ header  .contaner  .button{
+    background-color: #269271;
+    border-radius: 6px;
+    color: #fff;
+    position: relative;
+    top: 20vh;
+    padding: 15px 25px;
+    width: fit-content;
+
+ }
+
+ header  .contaner .text-contant .icon a{
+   color:#4b4646;
+   margin: 2rem 1rem;
+   font-size: 1.6rem;
+   transition: all 2s 4s linear;
+ }
+
+ header  .contaner .text-contant .icon a :hover{
+
+   transform: scale(.8);
+   border-radius: 4px;
+   
+   border: #1488a8 solid 3px;
+ }
+ 
+ header  .contaner .text-contant a:hover{
+    background-color: #14a177;
+ }
+ header .contaner img{
+    max-width: 450px;
+ }
+
+/* header end */
+
+/* About Start */
+
+ #Abuot .contaner,
+ #skills .continar,
+ #header .contaner,
+ #services .continar,
+ #portfolio .continar,
+ #contact .continar
+ {
+padding: 6rem 2rem;
+max-width: 1100px;
+margin: auto;
+
+
+}
+
+#Abuot .contaner hr,
+#skills .continar hr,
+#services .continar hr,
+#portfolio .continar hr
+{
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin: 6px auto 0;
+  ;
+
+}
+
+#Abuot .contaner h2,
+#skills .continar h2,
+#services .continar h2,
+#portfolio .continar h2,
+#contact .continar h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary-color);
+
+}
+
+#Abuot .contaner .contant{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+
+#Abuot .contaner .contant .col-1 p span{
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    
+}
+#Abuot .contaner .contant .col-1 .title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #1488a8;
+    margin: 1rem 0;
+
+}
+#Abuot .contaner .contant .col-1 p{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+#Abuot .contaner .contant .col-2 p{
+
+    border-bottom: 2px solid #b3b3bd;
+    padding-bottom: 15px;
+    margin: 2rem 0;
+
+}
+
+
+
+/* About End */
+
+/* Skills Start */
+
+#skills {
+  background-color: var(--primary-color);
+}
+
+#skills .continar h2{
+   color: #fff;
+}
+
+#skills .continar h2 span{
+   color: var(--secondary-color);
+}
+#skills .continar .row{
+   display: grid;
+   background-color: #132b31;
+   grid-template-columns: repeat(4, 1fr);
+   padding: 2rem;
+   align-items: center;
+   text-align: center;
+   
+}
+#skills .continar .row .itmes{
+   color: #fff;
+   background-color: #0b0808;
+   margin: 20px 40px;
+   padding: 1rem ;
+   border-radius: 10%;
+   font-size: 18px;
+   font-weight: 600;
+   transition: all 0.4s ease;
+}
+
+#skills .continar .row .itmes:hover{
+
+   box-shadow: 10px 10px 10px #393232;
+}
+#skills .continar .row .itmes:nth-child(3) img{
+   max-width: 120px;
+}
+#skills .continar .row .itmes img{
+   max-width: 80px;
+}
+
+/* Skills End */
+
+
+/* Services Start */
+
+
+#services .header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#services .header span{
+   color: var(--secondary-color);
+}
+
+#services {
+   background-color: #dedeea;
+}
+#services .continar .itmes{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   text-align: center;
+   margin-top: 4rem;
+   row-gap: 6px;
+   column-gap: 6px;
+   
+}
+#services .continar .itmes .itmes-contant{
+   padding: 20px;
+   background-color: rgb(249, 237, 237);
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+   transition: all 0.4s ease;
+  
+}
+#services .continar .itmes .itmes-contant:hover{
+
+  transform: scale(.9);
+}
+
+#services .continar img{
+   max-width: 60px;
+   border-radius: 30%;
+   margin-right: 10px;
+}
+
+/* Services End */
+
+/* Protfolio Start */
+
+#portfolio {
+   background-color: var(--primary-color);
+}
+
+#portfolio .continar h2{
+   color: #fff;
+}
+#portfolio .continar .row-contant{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   row-gap: 2rem;
+   column-gap: 2rem;
+   grid-template-columns: repeat(3, 1fr);
+   margin-top: 4rem;
+}
+#portfolio .continar .row-contant .row{
+   background-color: rgb(236, 227, 227);
+   border-radius: 5px;
+}
+
+#portfolio .continar .row-contant .row .cont{
+   padding: 10px 15px 20px;
+}
+#portfolio .continar .row-contant .row h3{
+   color: var(--primary-color);
+  margin-bottom: 10px;
+   font-size: 20px;
+   font-weight: 700;
+}
+#portfolio .continar .row-contant .row  a{
+  
+   font-size: 14px;
+   font-weight: 500;
+   color: var(--secondary-color);
+}
+
+#portfolio .continar h2 img{
+   max-width: 40px;
+   margin-right: 10px;
+ 
+}
+#portfolio .continar .row:hover{
+   box-shadow: 2px 2px 5px rgb(223, 223, 225);
+   transform: scale(.9);
+}
+
+#portfolio .continar .row{
+   transition: all 0.4s ease;
+}
+#portfolio .continar .row img {
+max-width: 100%;
+border-radius: 5px;
+border-bottom: 2px solid #898888;
+
+}
+/* Protfolio End */
+
+/* contact start */
+
+#contact{
+   background-color:rgba(123, 170, 126, 0.164);
+}
+
+#contact .continar .row{
+   display: grid;
+   padding: 2rem 3rem;
+   grid-template-columns: repeat(2, 1fr);
+   margin-top: 3rem;
+   column-gap: 2rem;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5px;
+   box-shadow: 3px 3px 9px rgb(0,0, 0,.6);
+}
+#contact .row input,
+#contact .row textarea{
+   display: block;
+   margin: 20px 0px;
+   padding: 5px;
+  width: 100%;
+  outline: none;
+  background-color: #e4fff7;
+  border: 2px solid #cecece;
+
+}
+
+#contact .row button{
+   color: #fff;
+   padding: 8px 15px;
+   border-radius: 4px;
+   border: none;
+   cursor: pointer;
+   background-color:var(--secondary-color);
+}
+
+#contact .row button:hover{
+   background-color: #417a69;
+}
+
+
+#contact .continar h2 img{
+
+   max-width: 60px;
+}
+
+#contact .continar .row img {
+max-width: 300px;
+border-radius: 8px;
+box-shadow: 2px 2px 6px #5c828c;
+}
+/* contact end */
+
+/* footer Start */
+footer{
+   background-color: #033b4a;
+   padding: 20px 0;
+   margin: auto;
+   text-align: center;
+   color: #fff;
+   border-radius: 4px;
+   box-shadow: 3px 4px 5px #000000;
+}
+/* footer End */
+
+
+
+/* media tablat*/
+@media (max-width :768px){
+
+   header .navbar nav{
+      display: block;
+      text-align: center;
+   }
+   header .navbar nav ul{
+      margin-top: 15px;
+   }
+   header .contaner{
+      
+      grid-template-columns: 1fr;
+
+   }
+
+   header .contaner img{
+      max-width: 350px;
+      margin: auto;
+   }
+
+   #Abuot .contaner .contant{
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+      row-gap: 2rem;
+   }
+
+   header  .contaner .text-contant h1{
+
+      font-size: 30;
+   }
+
+   header  .contaner .text-contant{
+
+      margin-top: 4rem;
+   }
+
+   #skills .continar .row,
+   #services .continar .itmes,
+   #portfolio .continar .row-contant{
+      grid-template-columns: repeat(2,1fr);
+   }
+
+ 
+   #contact .continar .row{
+      grid-template-columns: repeat(1,1fr);
+      
+   }
+   #contact .continar .row img{
+      max-width: 250px;
+      margin: auto;
+   }
+}
+
+/* media mobile */
+@media (max-width: 528px){
+
+   header .navbar nav ul{
+      height: 5vh;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #6eb6c9;
+   }
+   header .navbar nav ul li{
+      font-size: 15px;
+      
+      margin-right: 10px;
+   }
+   header  .contaner  .button{
+      position: relative;
+      top: 40vh;
+   }
+
+   header  .contaner .text-contant .icon a{
+      margin: 11px 2px;
+   }
+   header  .contaner .text-contant h1{
+      font-size: 35px;
+   }
+
+   header main .contaner .text-contant p span,
+   header  .contaner .text-contant .title{
+      font-size: 16px;
+   }
+   header .contaner img{
+      max-width: 250px;
+      margin: auto;
+   }
+
+   header  .contaner .text-contant a{
+      padding: 10px;
+   }
+
+#Abuot .contaner h2,
+#skills .continar h2,
+#services .continar h2,
+#portfolio .continar h2,
+#contact .continar h2{
+   font-size: 25px;
+}
+#Abuot .contaner .contant .col-1 p span{
+   font-size: 20px;
+}
+
+#skills .continar .row,
+#services .continar .itmes,
+#portfolio .continar .row-contant{
+   grid-template-columns: 1fr;
+}
+
+#contact .continar .row{
+   padding: 1.5rem ;
+}
+
+}
